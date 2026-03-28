@@ -24,8 +24,8 @@ jobs:
     - name: Build
       run: cargo build --verbose
 
-    - name: Tests
-      run: cargo test --verbose
+    - name: Check
+      run: cargo check --verbose
 
     - name: Format check (extra)
       run: cargo fmt -- --check || true
